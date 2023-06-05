@@ -9,7 +9,7 @@ class Manager(
     cpf = cpf,
     salary = salary)  {
 
-    override val bonus: Double = salary * 0.2
+    override fun getBonus(): Double = super.getBonus() + salary
 
     fun authentication(password: String): Boolean = this.password == password
 
